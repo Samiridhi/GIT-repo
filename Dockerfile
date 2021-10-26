@@ -1,6 +1,6 @@
 FROM nginx:alpine
 RUN mdir /usr
-COPY . /usr/nginx/html
+COPY . /usr/html
 WORKDIR /usr
 RUN npm install
 EXPOSE 8080
